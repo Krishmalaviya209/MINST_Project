@@ -9,6 +9,8 @@ Importing Necessary Libraries :
 Load the MNIST Dataset:
 - The code loads the MNIST dataset from the library, which consists of a large collection of 28x28 pixel grayscale images of handwritten digits (0 to 9) for both training and testing.
 
+Resource : Link to the dataset - https://www.tensorflow.org/datasets/catalog/mnist
+
 Preprocess the Data:
 * The images in the dataset are preprocessed as follows:
   - Reshaped to (28, 28, 1) to match the expected input shape for the neural network.
