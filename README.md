@@ -1,6 +1,9 @@
 # MINST_Project
 
 Importing Necessary Libraries :
+- TensorFlow and its Keras API are imported for building and training the neural network.
+- Numpy is used for numerical operations.
+- PIL (Python Imaging Library) is imported for image-related tasks.
 
 
 Load the MNIST Dataset:
@@ -24,6 +27,28 @@ CNN Model:
     - Fully Connected (Dense) Layer 1: 64 units with ReLU activation.
     - Fully Connected Layer 2: 10 units with softmax activation, representing the 10 possible digit classes.
 
+      CNN Representation :
+      
+Input (28x28x1)
+|
+Conv2D (32, 3x3, relu)
+|
+MaxPooling2D (2x2)
+|
+Conv2D (64, 3x3, relu)
+|
+MaxPooling2D (2x2)
+|
+Conv2D (64, 3x3, relu)
+|
+Flatten
+|
+Dense (64, relu)
+|
+Dense (10, softmax)
+|
+Output
+
 Compile the Model:
 * The model is compiled with the following settings:
     - Optimizer: 'adam' - A popular optimization algorithm.
@@ -34,5 +59,11 @@ Train the Model:
 - The model is trained using the training data (images and one-hot encoded labels).
 - The training process consists of 5 epochs, meaning the model will make five passes through the entire training dataset.
 - Batch size is set to 64, which means the model's weights are updated after processing each batch of 64 training examples.
+
+
+
+
+Link to amazing interactive MINST model : https://transcranial.github.io/keras-js/#/mnist-cnn
+
 
   
